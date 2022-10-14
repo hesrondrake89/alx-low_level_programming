@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - Prints 3 combination of numbers
- *
- * Return: Always (Success)
- */
+  * main - Prints 3 combination of numbers
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
 	int c, i, k, j;
@@ -23,18 +23,18 @@ int main(void)
 						putchar(i);
 						putchar(' ');
 						putchar(k);
-						putchar(j)
+						putchar(j);
+
 					if (c + i + k + j == 227 && c == 57)
 					{
-						break;
+					break;
 					}
 					else
 					{
-						putchar(',');
-						putchar(' ');
+					putchar(',');
+					putchar(' ');
 					}
 					}
-
 				}
 			}
 		}
