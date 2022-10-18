@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Description: Calculates the first 50 Fibonacci numbers
- * Return: Always Zero
+ * main - prints out first 50
+ * fibonacci suit numbers
+ * Return: return 0
  */
 
 int main(void)
