@@ -1,24 +1,20 @@
 #include "main.h"
-
 /**
- * print_last_digit - function that print last digit of a number
- *
- * @n: entry point
- *
- * Return: return last digit
- **/
-
-int print_last_digit(int n)
+ * print_last_digit - a function that prints the last digit of a number
+ * @nld: number's last digit result
+ * Return: value of the last digit
+ */
+int print_last_digit(int nld)
 {
-	n = n % 10;
+	int pld;
 
-	if (n < 0)
+	pld = (nld % 10);
+
+	if (pld < 0)
 	{
-		n = -n;
+		pld = (-1 * pld);
 	}
-	else
-	{
-		_putchar(n + '0');
-	}
-	return (n);
+
+	_putchar(pld + '0');
+	return (pld);
 }
