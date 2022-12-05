@@ -2,42 +2,47 @@
 #include <stdlib.h>
 
 /**
- * read_textfile - Reads a text file and prints it to POSIX stdout.
- * @filename: A pointer to the name of the file.
- * @letters: The number of letters the
- *           function should read and print.
+ * read_textfile - reads a text file and prints it.
  *
- * Return: If the function fails or filename is NULL - 0.
- *         O/w - the actual number of bytes the function can read and print.
-<<<<<<< HEAD
- *hhjhhhhssize_t read_textfile(const char *filename, size_t letters)
-=======
+ * @filename: const char type pointer to file to be read
+ *
+ * @letters: size_t type
+ *
+ * Return: 0
  */
+
 ssize_t read_textfile(const char *filename, size_t letters)
->>>>>>> 55edabba12ee1118453992b9875344294a73d119
 {
-	ssize_t o, r, w;
-	char *buffer;
+	int fp;
+	ssize_t fpRead, fpWrite, fpClose;
+	char *lineBuffer;
 
 	if (filename == NULL)
 		return (0);
 
-	buffer = malloc(sizeof(char) * letters);
-	if (buffer == NULL)
+	lineBuffer = malloc(sizeof(char) * letters);
+
+	if (lineBuffer == NULL)
+		return (-1);
+
+	fp = open(filename, O_RDONLY);
+
+	if (fp == -1)
 		return (0);
 
-	o = open(filename, O_RDONLY);
-	r = read(o, buffer, letters);
-	w = write(STDOUT_FILENO, buffer, r);
+	fpRead = read(fp, lineBuffer, letters);
 
-	if (o == -1 || r == -1 || w == -1 || w != r)
-	{
-		free(buffer);
-		return (0);
-	}
+	if (fpRead == -1)
+		return (-1);
 
-	free(buffer);
-	close(o);
+	fpWrite = write(STDOUT_FILENO, lineBuffer, fpRead);
 
-	return (w);
+	if (fpWrite == -1)
+		return (-1);
+	fpClose = close(fp);
+
+	if (fpClose == -1)
+		return (-1);
+
+	return (fpRead);
 }
