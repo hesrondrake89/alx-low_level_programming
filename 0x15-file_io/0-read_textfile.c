@@ -9,7 +9,12 @@
  *
  * Return: If the function fails or filename is NULL - 0.
  *         O/w - the actual number of bytes the function can read and print.
+<<<<<<< HEAD
  *hhjhhhhssize_t read_textfile(const char *filename, size_t letters)
+=======
+ */
+ssize_t read_textfile(const char *filename, size_t letters)
+>>>>>>> 55edabba12ee1118453992b9875344294a73d119
 {
 	ssize_t o, r, w;
 	char *buffer;
