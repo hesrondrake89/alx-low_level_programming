@@ -1,5 +1,5 @@
 /*
- * File: 0-linear.c
+ * File: 100-jump.c
  * Auth: Hesron Atee
  */
 
