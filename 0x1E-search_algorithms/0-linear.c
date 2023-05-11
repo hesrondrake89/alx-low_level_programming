@@ -1,4 +1,7 @@
-#include "search_algos.h"
+/*
+ * File: 0-linear.c
+ * Auth: Hesron Atee
+ */
 
 #include "search_algos.h"
 
