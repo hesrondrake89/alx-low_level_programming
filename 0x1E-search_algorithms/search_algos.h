@@ -1,3 +1,8 @@
+/*
+ * File: search_algos.h
+ * Auth: Hesron Atee
+ */
+
 #ifndef _SORTING_ALGOS_H_
 #define _SORTING_ALGOS_H_
 
