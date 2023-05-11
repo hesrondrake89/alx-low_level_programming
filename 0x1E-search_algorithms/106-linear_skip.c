@@ -1,3 +1,8 @@
+/*
+ * File: 106-linear_skip.c
+ * Auth: Hesron Atee
+ */
+
 #include "search_algos.h"
 
 /**
@@ -7,6 +12,7 @@
  * @value: value to search in
  * Return: index of the number
  */
+
 skiplist_t *linear_skip(skiplist_t *list, int value)
 {
 	skiplist_t *go;
