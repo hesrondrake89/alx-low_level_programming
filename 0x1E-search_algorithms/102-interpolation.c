@@ -1,5 +1,5 @@
 /*
- * File: 0-linear.c
+ * File: 102-interpolation.c
  * Auth: Hesron Atee
  */
 
