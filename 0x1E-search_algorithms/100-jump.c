@@ -1,3 +1,8 @@
+/*
+ * File: 0-linear.c
+ * Auth: Hesron Atee
+ */
+
 #include "search_algos.h"
 #include <math.h>
 
@@ -10,6 +15,7 @@
  * @value: value to search in
  * Return: index of the number
  */
+
 int jump_search(int *array, size_t size, int value)
 {
 	int index, m, k, prev;
