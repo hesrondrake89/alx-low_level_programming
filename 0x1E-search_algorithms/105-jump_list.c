@@ -1,3 +1,8 @@
+/*
+ * File: 105-jump_list.c
+ * Auth: Hesron Atee
+ */
+
 #include "search_algos.h"
 #include <math.h>
 
@@ -10,6 +15,7 @@
  * @value: value to search in
  * Return: index of the number
  */
+
 listint_t *jump_list(listint_t *list, size_t size, int value)
 {
 	size_t index, k, m;
