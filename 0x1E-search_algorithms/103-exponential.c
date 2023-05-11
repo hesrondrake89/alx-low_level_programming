@@ -1,3 +1,8 @@
+/*
+ * File: 103-exponential.c
+ * Auth: Hesron Atee
+ */
+
 #include "search_algos.h"
 
 /**
@@ -13,6 +18,7 @@
   *
   * Description: Prints the [sub]array being searched after each change.
   */
+
 int _binary_search(int *array, size_t left, size_t right, int value)
 {
 	size_t i;
@@ -51,6 +57,7 @@ int _binary_search(int *array, size_t left, size_t right, int value)
   *
   * Description: Prints a value every time it is compared in the array.
   */
+
 int exponential_search(int *array, size_t size, int value)
 {
 	size_t i = 0, right;
